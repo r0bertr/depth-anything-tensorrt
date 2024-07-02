@@ -150,9 +150,9 @@ int main(int argc, char** argv)
             cv::Mat result;
             cv::hconcat(show_frame, result_d, result);
             cv::resize(result, result, cv::Size(1080, 480));
-            imshow("depth_result", result);
+            // imshow("depth_result", result);
             output_video.write(result_d);
-            cv::waitKey(1);
+            // cv::waitKey(1);
         }
 
         // Release resources
@@ -183,8 +183,8 @@ int main(int argc, char** argv)
             cv::Mat result;
             cv::hconcat(show_frame, result_d, result);
             cv::resize(result, result, cv::Size(1080, 480));
-            imshow("depth_result", result);
-            cv::waitKey(1);
+            // imshow("depth_result", result);
+            // cv::waitKey(1);
 
             std::istringstream iss(imagePath);
             std::string token;
