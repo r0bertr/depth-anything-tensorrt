@@ -29,7 +29,7 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Set TensorRT path if not set in environment variables
-set(TENSORRT_DIR "D:\\Utils\\TensorRT-10.0.1.6")
+set(TENSORRT_DIR /opt/TensorRT)
 
 # Include TensorRT
 include_directories(${TENSORRT_DIR}/include)
